@@ -6,10 +6,12 @@ import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Everything AI",
+  title: "Bridge - The copilot that sees your screen and helps before you ask",
   description:
-    "Everything AI is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.",
+    "Bridge brings AI to the desktop level — it quietly observes how you work across apps, learns your habits, and offers proactive, contextual help without prompts. Everything runs local-first, so your data never leaves your device unencrypted.",
   openGraph: {
+    title: "Bridge - Your Intelligent Context Layer",
+    description: "The copilot that sees your screen and helps before you ask",
     images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
   },
 };
