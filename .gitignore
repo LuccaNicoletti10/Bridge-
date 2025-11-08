@@ -34,3 +34,14 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Development folders with old code
+Actsbefore you/
+Dark-Themed UI Illustrations/
+Dark-Themed UI Illustrations NEW/
+Imagem 2 /
+Imagem 3 /
+Understands How You Work/
+Logo Animation Request/
+AI Assistant Screen Mockup (1)/
+components/bridge-mockup/
