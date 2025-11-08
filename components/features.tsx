@@ -25,18 +25,11 @@ export const Features = () => {
       className: "border-b col-span-1 lg:col-span-2 dark:border-neutral-800 lg:min-h-[600px]",
     },
     {
-      title: "Filters What's Meaningful",
-      description:
-        "Not everything on your screen matters. Bridge filters out redundant frames, static content, and unimportant clicks — focusing AI power where it counts.",
-      skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3 border-r dark:border-neutral-800",
-    },
-    {
       title: "Builds Your Cognitive Profile",
       description:
         "Bridge learns how you think, not just what you do. It tracks your friction points, decisions, and creative flows to form an evolving cognitive model of you.",
       skeleton: <SkeletonFour />,
-      className: "col-span-1 lg:col-span-3",
+      className: "col-span-1 lg:col-span-6",
     },
   ];
   return (
