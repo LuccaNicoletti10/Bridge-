@@ -2,6 +2,25 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Check } from "lucide-react";
 
+// Fixed particle positions to avoid hydration mismatch
+const PARTICLE_POSITIONS = [
+  { left: 76.38, top: 78.92, yOffset: -42, delay: 0.58, duration: 1.12 },
+  { left: 37.33, top: 40.60, yOffset: -48, delay: 1.23, duration: 1.38 },
+  { left: 62.10, top: 78.77, yOffset: -35, delay: 0.92, duration: 1.45 },
+  { left: 79.93, top: 43.82, yOffset: -41, delay: 1.15, duration: 1.28 },
+  { left: 72.33, top: 30.44, yOffset: -50, delay: 0.67, duration: 1.19 },
+  { left: 32.67, top: 60.84, yOffset: -37, delay: 1.42, duration: 1.33 },
+  { left: 66.26, top: 61.22, yOffset: -45, delay: 0.81, duration: 1.41 },
+  { left: 68.96, top: 71.05, yOffset: -39, delay: 1.08, duration: 1.22 },
+  { left: 27.00, top: 66.87, yOffset: -46, delay: 0.95, duration: 1.37 },
+  { left: 47.73, top: 74.70, yOffset: -43, delay: 1.31, duration: 1.15 },
+  { left: 40.57, top: 34.77, yOffset: -38, delay: 0.73, duration: 1.48 },
+  { left: 45.79, top: 69.65, yOffset: -49, delay: 1.19, duration: 1.26 },
+  { left: 26.84, top: 42.09, yOffset: -44, delay: 0.88, duration: 1.34 },
+  { left: 35.37, top: 52.71, yOffset: -36, delay: 1.38, duration: 1.17 },
+  { left: 59.53, top: 64.03, yOffset: -47, delay: 1.05, duration: 1.42 },
+];
+
 export function BridgeTwoSecondDemo() {
   const [animationKey, setAnimationKey] = useState(0);
 
@@ -276,23 +295,23 @@ function AnimationSequence() {
 
         {/* Ambient particles throughout */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          {[...Array(15)].map((_, i) => (
+          {PARTICLE_POSITIONS.map((particle, i) => (
             <motion.div
               key={i}
               className="absolute w-1 h-1 bg-[#FE8E49] rounded-full"
               style={{
-                left: `${20 + Math.random() * 60}%`,
-                top: `${20 + Math.random() * 60}%`,
+                left: `${particle.left}%`,
+                top: `${particle.top}%`,
               }}
               initial={{ opacity: 0 }}
               animate={{
                 opacity: [0, 0.6, 0],
                 scale: [0, 1.5, 0],
-                y: [0, -30 - Math.random() * 20],
+                y: [0, particle.yOffset],
               }}
               transition={{
-                delay: 0.5 + Math.random() * 1,
-                duration: 1 + Math.random() * 0.5,
+                delay: particle.delay,
+                duration: particle.duration,
               }}
             />
           ))}

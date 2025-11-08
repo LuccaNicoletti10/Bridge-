@@ -6,9 +6,9 @@ import { Pricing } from "@/components/pricing";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pricing - Bridge",
+  title: "Pricing - Everything AI",
   description:
-    "Bridge offers flexible pricing for individuals and enterprises. Choose the plan that suits your needs.",
+    "Everything AI is a platform that provides a wide range of AI tools and services to help you stay on top of your business. Generate images, text and everything else that you need to get your business off the ground.",
   openGraph: {
     images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
   },
@@ -18,7 +18,7 @@ export default function PricingPage() {
   return (
     <div className="relative overflow-hidden py-20 md:py-0">
       <Background />
-      <Container className="flex flex-col items-center justify-between pb-20">
+      <Container className="flex flex-col items-center justify-between  pb-20">
         <div className="relative z-20 py-10 md:pt-40">
           <Heading as="h1">Simple pricing for your ease</Heading>
           <Subheading className="text-center">

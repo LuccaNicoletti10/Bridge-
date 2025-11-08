@@ -6,13 +6,14 @@ import { ViewTransitions } from "next-view-transitions";
 import { ThemeProvider } from "@/context/theme-provider";
 
 export const metadata: Metadata = {
-  title: "Bridge - The copilot that sees your screen and helps before you ask",
+  title: "Bridge - Your Proactive Context Layer",
   description:
-    "Bridge brings AI to the desktop level — it quietly observes how you work across apps, learns your habits, and offers proactive, contextual help without prompts. Everything runs local-first, so your data never leaves your device unencrypted.",
+    "Bridge brings AI to the desktop level — it quietly observes how you work across apps, learns your habits, and offers proactive, contextual help without prompts.",
   openGraph: {
-    title: "Bridge - Your Intelligent Context Layer",
-    description: "The copilot that sees your screen and helps before you ask",
-    images: ["https://ai-saas-template-aceternity.vercel.app/banner.png"],
+    images: ["/banner.png"],
+  },
+  icons: {
+    icon: "/bridge-logo.png",
   },
 };
 
