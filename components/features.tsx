@@ -6,7 +6,6 @@ import { GridLineHorizontal, GridLineVertical } from "./grid-lines";
 import { SkeletonOne } from "./skeletons/first";
 import { SkeletonTwo } from "./skeletons/second";
 import { SkeletonFour } from "./skeletons/fourth";
-import { SkeletonThree } from "./skeletons/third";
 
 export const Features = () => {
   const features = [
@@ -29,7 +28,7 @@ export const Features = () => {
       title: "Filters What's Meaningful",
       description:
         "Not everything on your screen matters. Bridge filters out redundant frames, static content, and unimportant clicks — focusing AI power where it counts.",
-      skeleton: <SkeletonThree />,
+      skeleton: <SkeletonFour />,
       className: "col-span-1 lg:col-span-3 border-r dark:border-neutral-800",
     },
     {
