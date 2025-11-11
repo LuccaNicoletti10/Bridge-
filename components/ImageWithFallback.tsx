@@ -20,18 +20,16 @@ export const ImageWithFallback: React.FC<ImageWithFallbackProps> = ({
   height = 48,
 }) => {
   const [imgSrc, setImgSrc] = useState(src);
-  const [hasError, setHasError] = useState(false);
 
   return (
     <Image
-      src={hasError ? fallbackSrc : imgSrc}
+      src={imgSrc}
       alt={alt}
       width={width}
       height={height}
       className={className}
       onError={() => {
-        if (!hasError) {
-          setHasError(true);
+        if (imgSrc !== fallbackSrc) {
           setImgSrc(fallbackSrc);
         }
       }}
