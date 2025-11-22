@@ -1,5 +1,11 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Bridge MVP Specification
+
+The product requirements for the Bridge MVP are captured in [`docs/bridge-mvp-spec.md`](docs/bridge-mvp-spec.md) for quick reference.
+
+For a step-by-step delivery plan that turns the specification into shippable milestones, see [`docs/bridge-mvp-implementation.md`](docs/bridge-mvp-implementation.md).
+
 ## Getting Started
 
 First, run the development server:

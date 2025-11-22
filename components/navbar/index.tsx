@@ -5,6 +5,10 @@ import { motion } from "framer-motion";
 
 const navItems = [
   {
+    title: "Roadmap",
+    link: "/implementation",
+  },
+  {
     title: "Pricing",
     link: "/pricing",
   },
